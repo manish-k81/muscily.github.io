@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="font-body bg-black text-white">
+    <div class="grid md:grid-cols-3"> <!--the main wrapper-->
+      <div class=" md:col-span-1 md:flex md:justify-end">
+         <nav class="text-right"> <!--starting of the navbar-->
+
+             <div class="flex justify-between items-center">
+                 <h1 class="font-bold uppercase text-2xl">
+                   <a href="/">Muscily</a>
+                </h1>
+
+                <div class="md:hidden cursor-pointer" id="burger"> <!--hamburger menu-->
+                    <svg class="w-7" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                      </svg>
+                </div>
+
+             </div>
+
+             <ul class="text-sm mt-6 hidden md:block" id="music">
+              <li class="py-2">
+                  <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                      <span class="font-bold text-gray-200">HOME</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                  </a>
+              </li>
+
+              <li class="py-2">
+                <a href="#" class="px-4 flex justify-end">
+                    <span>PLAYLIST</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-5 ml-2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                      </svg>
+                </a>
+            </li>
+             </ul>
+
+             
+
+             <ul class="text-sm mt-5 hidden md:block" id="music1">
+                <div>
+                    <h1 class="uppercase font-bold text-2xl mt-4">Discover</h1>
+                </div>
+                 <li class="py-2">
+                     <a href="#" class="px-4 flex justify-end">
+                         <span>ENGLISH</span>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 ml-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                     </a>
+                 </li>
+
+                 <li class="py-2">
+                    <a href="#" class="px-4 flex justify-end">
+                        <span>BOLLYWOOD-MIX</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 ml-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </a>
+                </li>
+
+                <li class="py-2">
+                    <a href="#" class="px-4 flex justify-end">
+                        <span>Marathi</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 ml-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </a>
+                </li>
+             </ul>
+        </nav>
+    </div><!--ending the navbar-->
+
+    <main class="bg-black px-16 py-6 md:col-span-2"> <!--another container inside the main container-->
+        <div class="flex justify-center md:justify-end">
+            <a href="#" class="btn font-semibold  border-white border-2 hover:bg-white hover:text-black">Login</a>
+            <a href="#" class="btn font-semibold ml-5 border-white border-2 hover:bg-white hover:text-black">Sign-up</a>
+        </div>
+
+        <header class="p-5">
+           <h2 class="font-bold text-5xl">Muscily</h2>
+           <h3 class="font-semibold text-sm">Suno.aur.Sunnao</h3>
+        </header>
+
+        <div> <!--this container will hold all the cards-->
+            <h4 class="text-2xl border-b border-gray-200 mb-5">Trending</h4>
+
+            <div class="grid lg:grid-cols-3 gap-10"> <!--this container will hold trending song cards-->
+
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/linkin.png" class="w-full h-32 sm:h-60 object-cover">
+                <div class="text-black m-3">
+                    <span class="font-bold">Castle of Glass</span>
+                    <span class="block text-sm">-Linkin Park</span>
+                </div>
+            </div>
+          
+
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/republic.jpg" class="w-full h-60  sm:h:48 object-cover">
+                <div  class="text-black m-3">
+                    <span class="font-bold">Counting Stars</span>
+                    <span class="block text-sm">-One Republic</span>
+                </div>
+            </div>
+           
+
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/bon.jpg" class="w-full h-60  sm:h:48 object-cover">
+                <div class="text-black m-3">
+                    <span class="font-bold">Livin On Prayer</span>
+                    <span class="block text-sm">-Nirvana</span>
+                </div>
+            </div>
+
+             </div>
+
+             <h4 class="mt-4 text-2xl border-b border-gray-200 mb-5">Hindi-Meldoy</h4>
+             <div class="grid md:grid-cols-3 gap-10"> <!--this container will hold all the hindi song cards-->
+                 <div class="bg-white rounded overflow-hidden shadow-md">
+                     <img src="img/brown.jpg" class="w-full h-60 sm:h:48 object-cover">
+                 <div class="text-black m-3">
+                     <span class="font-bold">Brown Munde</span>
+                     <span class="block text-sm">-Ap Dhillon</span>
+                 </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/rockstar.jpg" class="w-full h-60 sm:h:48 object-cover">
+                <div class="text-black m-3">
+                    <span class="font-bold">Tum Ho</span>
+                    <span class="block text-sm">-Mohit Chauhan</span>
+                </div>
+               </div>
+
+               <div class="bg-white rounded overflow-hidden shadow-md">
+                <img src="img/udaan.jpg" class="w-full h-60 sm:h:48 object-cover">
+            <div class="text-black m-3">
+                <span class="font-bold">Kahaani</span>
+                <span class="block text-sm">-Neuman Pinto</span>
+            </div>
+           </div>
+
+             </div>
+
+             <h4 class="mt-5 text-2xl border-b border-gray-200 mb-5">Marathi</h4>
+             <div class=" grid md:grid-cols-3 gap-10"> <!--this container will hold all the Marathi song cards-->
+             <div class="bg-white rounded overflow-hidden shadow-md">
+                 <img src="img/natrang.jpg" class="w-full h-60 sm:h:48 object-cover">
+             <div class="text-black m-3">
+                 <span class="font-bold">Apsara Aali</span>
+                 <span class="block text-sm">-Ajay & Atul</span>
+             </div>
+             </div>
+
+             <div class="bg-white rounded overflow-hidden shadow-md">
+                <img src="img/natsamrat.jpg" class="w-full h-60 sm:h:48 object-cover">
+            <div class="text-black m-3">
+                <span class="font-bold">Mituni Lochane</span>
+                <span class="block text-sm">-Vijay Prakash</span>
+            </div>
+            </div>
+
+            <div class="bg-white rounded overflow-hidden shadow-md">
+                <img src="img/mauli.jpg" class="w-full h-60 sm:h:48 object-cover">
+            <div class="text-black m-3">
+                <span class="font-bold">Mauli Mauli</span>
+                <span class="block text-sm">-Ajay Gogavale</span>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+
+        <div class="mt-5 flex justify-center">
+            <div class="border rounded p-3 cursor-pointer  hover:bg-white hover:text-black">Load More</div>
+        </div>
+
+    </main>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
